@@ -1,0 +1,117 @@
+.catalog
+    height: 1100px
+    padding-bottom: 103px
+    &__title
+        font-weight: 400
+        font-size: 30px
+        line-height: 150%
+        text-transform: uppercase
+        text-align: center
+        color: #0d0d0d
+    &__tabs
+        margin-top: 70px
+        list-style-type: none
+        display: flex
+        justify-content: center
+        margin-bottom: 0
+        margin-left: 0
+    &__tab
+        width: 220px
+        height: 50px
+        border: 2px solid #d0d0d0
+        font-weight: 400
+        font-size: 18px
+        line-height: 52px
+        text-transform: uppercase
+        text-align: center
+        color: #6b6b6b
+        transform: skewX(-25deg)
+        margin: 0 5px
+        cursor: pointer
+        transition: 0.5s all
+        &:hover
+            box-shadow: 3px 3px 20px $main-color
+            border: none
+        div
+            transform: skewX(25deg)
+        &_active
+            background-color: $main-color
+            color: #fff
+            border: none
+
+    &__content
+        margin-top: 60px
+
+    &__item
+        width: 280px
+        min-height: 380px
+        border: 2px solid #e8e8e8
+        padding: 20px 20px 26px 20px
+
+    &__img
+        max-width: 100%
+        height: 200px
+        display: block
+        margin: 0 auto
+
+    &__subtitle
+        margin-top: 20px
+        font-weight: 700
+        font-size: 16px
+        text-align: center
+        color: #0d0d0d
+
+    &__descr
+        margin-top: 15px
+        font-weight: 300
+        line-height: 16px
+        font-size: 14px
+        text-align: center
+        color: #0d0d0d
+
+    &__link
+        display: block
+        margin-top: 17px
+        margin-bottom: 17px
+        font-weight: 500
+        font-size: 14px
+        line-height: 100%
+        text-decoration: underline
+        text-decoration-skip-ink: none
+        text-align: center
+        color: $main-color
+
+    hr
+        background-color: #e8e8e8
+        border-bottom: none
+        margin-bottom: 17px
+
+
+    &__footer
+        display: flex
+        justify-content: space-between
+
+    &__old-price
+        margin-left: 23px
+        font-weight: 300
+        font-size: 14px
+        line-height: 100%
+        text-decoration: line-through
+        color: #555
+
+    &__new-price
+        margin-left: 23px
+        font-weight: 700
+        font-size: 20px
+        line-height: 100%
+        color: #050505
+    &__btn
+        width: 135px
+        height: 44px
+        background-color: $main-color
+        border-radius: 5px
+        font-weight: 500
+        font-size: 14px
+        text-transform: uppercase
+        text-align: center
+        color: #fff
