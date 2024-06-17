@@ -25,16 +25,16 @@ $(document).ready(function(){
       $('.catalog__link').each(function(i) {
         $(this).on('click', function(e) {
            e.preventDefault();
-           $('.catalog__main-content').eq(i).toggleClass('.catalog__main-content_active');
-           $('.catalog__list-content').eq(i).toggleClass('.catalog__list-content_active');
+           $('.catalog__main-content').eq(i).toggleClass('catalog__main-content_active');
+           $('.catalog__list-content').eq(i).toggleClass('catalog__list-content_active');
         })
       })
 
       $('.catalog__link-list').each(function(i) {
         $(this).on('click', function(e) {
            e.preventDefault();
-           $('.catalog__main-content').eq(i).toggleClass('.catalog__main-content_active');
-           $('.catalog__list-content').eq(i).toggleClass('.catalog__list-content_active');
+           $('.catalog__main-content').eq(i).toggleClass('catalog__main-content_active');
+           $('.catalog__list-content').eq(i).toggleClass('catalog__list-content_active');
         })
       })
 
