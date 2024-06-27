@@ -38,4 +38,21 @@ $(document).ready(function(){
         })
       })
 
+      /* Модальные окна */
+
+      $('[data-modal=consultation]').on('click', function() {
+        $('.overlay, #consultation').fadeIn();
+      });
+      $('.modal__close').on('click', function() {
+        $('.overlay, #consultation, #order, #thanks').fadeOut('slow')
+      });
+
+      
+
+      $('.catalog__btn').each(function(i) {
+        $(this).on('click', function() {
+          $('.modal__descr').text($('.catalog__subtitle').eq(i).text());
+          $('.overlay, #order').fadeIn();
+        })
+      });
 });
