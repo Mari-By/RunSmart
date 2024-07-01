@@ -55,4 +55,106 @@ $(document).ready(function(){
           $('.overlay, #order').fadeIn();
         })
       });
+
+
+      /* валидация форм */
+      
+        $('#consultation form').validate({
+          rules: {
+            name: {
+              required: true,
+              minlength: 2
+            },
+            phone: {
+              required: true,
+              minlength: 11
+            },
+            email: {
+              required: true,
+              email: true
+            }
+          },
+          messages: {
+            name: {
+              required: "Укажите Ваше имя, пожалуйста",
+              minlength: jQuery.validator.format("Введите не менее {0} символов, пожалуйста")
+            },
+            phone: {
+              required: "Укажите Ваш номер телефона",
+              minlength: jQuery.validator.format("Введите {0} символов, пожалуйста"),
+            },
+            email: {
+              required: "Укажите Ваш email, пожалуйста",
+              email: "Ваш e-mail должен быть в формате name@domain.com"
+            }
+          }
+  
+        });
+      
+        $('#main-form').validate({
+          rules: {
+            name: {
+              required: true,
+              minlength: 2
+            },
+            phone: {
+              required: true,
+              minlength: 11
+            },
+            email: {
+              required: true,
+              email: true
+            }
+          },
+          messages: {
+            name: {
+              required: "Укажите Ваше имя, пожалуйста",
+              minlength: jQuery.validator.format("Введите не менее {0} символов, пожалуйста")
+            },
+            phone: {
+              required: "Укажите Ваш номер телефона",
+              minlength: jQuery.validator.format("Введите {0} символов, пожалуйста"),
+            },
+            email: {
+              required: "Укажите Ваш email, пожалуйста",
+              email: "Ваш e-mail должен быть в формате name@domain.com"
+            }
+          }
+  
+        });
+    
+        $('#order form').validate({
+          rules: {
+            name: {
+              required: true,
+              minlength: 2
+            },
+            phone: {
+              required: true,
+              minlength: 11
+            },
+            email: {
+              required: true,
+              email: true
+            }
+          },
+          messages: {
+            name: {
+              required: "Укажите Ваше имя, пожалуйста",
+              minlength: jQuery.validator.format("Введите не менее {0} символов, пожалуйста")
+            },
+            phone: {
+              required: "Укажите Ваш номер телефона",
+              minlength: jQuery.validator.format("Введите {0} символов, пожалуйста"),
+            },
+            email: {
+              required: "Укажите Ваш email, пожалуйста",
+              email: "Ваш e-mail должен быть в формате name@domain.com"
+            }
+          }
+  
+        });
+
+        $('input[name=phone]').mask("+7 (999) 999-9999");
+
 });
